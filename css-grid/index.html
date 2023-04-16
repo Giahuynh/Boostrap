@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            /*grid-template-columns:xác định số cột và độ rộng từng cột*/
+            /*grid-template-rows:xác định số hàng và độ cao từng hàng*/
+            /*display: grid => quy định 1 thẻ mà giúp thẻ này có các thẻ con được xếp theo dạng lưới*/
+            /*có thể quy định chiều ngang,chiều dọc và độ rộng của các phần tử*/
+            /*justify-content:canh chỉnh các phần tử trong display hoặc grid
+            space-between:canh chỉnh khoảng cách đều nhau
+            space-around:cùng cách khoảng cách đều nhau
+            center:cách nhau tại trung tâm
+            star:đoạn đầu
+            end:đoạn cuối*/
+        }
+        .b {
+            border: 1px solid;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+        <div class="b"></div>
+        <div class="b"></div>
+    </div>
+</body>
+</html>

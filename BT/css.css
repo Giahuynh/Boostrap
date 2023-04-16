@@ -1,0 +1,17 @@
+.txt {
+    color: red;
+    font-size: 22px;
+}
+.inp {
+    width: 300px;
+}
+h1 {
+    font-size: 30px;
+    color: blue;
+}
+button {
+    background: yellow;
+    color: pink;
+    width: 50px;
+    height: 30px;
+}

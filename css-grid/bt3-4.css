@@ -1,0 +1,20 @@
+.box {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 20px;
+}
+.item {
+    height: 150px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+.box2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}
+.box3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}

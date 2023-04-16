@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid skyblue;
+            margin: 5px;
+            width: calc(25% - 10px - 2px);
+            float: left;
+        }
+        .box>img {
+            width: 100%;
+        }
+        .box>p {
+            text-align: center;
+        }
+        .box:hover {
+            border: 1px solid black;
+        }
+        @media only screen and (max-width: 900px) {
+            .box {
+                width: calc(50% - 10px - 2px );
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .box {
+                width: calc(100% - 10px - 2px );
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images.jpg" alt="">
+        <p>Phantom Assassin</p>
+    </div>
+    <div class="box">
+        <img src="images.jpg" alt="">
+        <p>Phantom Assassin</p>
+    </div>
+    <div class="box">
+        <img src="images.jpg" alt="">
+        <p>Phantom Assassin</p>
+    </div>
+    <div class="box">
+        <img src="images.jpg" alt="">
+        <p>Phantom Assassin</p>
+    </div>
+</body>
+</html>

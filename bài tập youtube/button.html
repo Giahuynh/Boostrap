@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button {
+            --color: rgb(68,255,205);
+            border: 0;
+            font-family: inherit;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: black;
+            background: var(--color);
+            padding: 20px 45px;
+            position: relative;
+            transition: .15s ease;
+        }
+        button:hover {
+            background: transparent;
+            color: var(--color);
+        }
+        button::before
+        button::after {
+            content:  '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: var(--color);
+            transition: .35s ease .1s;
+        }
+        button::before{
+                top: 0;
+                left: 0;
+        }
+        button::after {
+            bottom: 0;
+            right: 0;
+        }
+        button:hover::before,
+        button:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button>Button</button>
+</body>
+</html>
